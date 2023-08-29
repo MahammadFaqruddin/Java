@@ -1,0 +1,29 @@
+class Apple{
+    void display(){
+        System.out.println("Inside Apple's display method");
+
+    }
+}
+class Banana extends Apple{
+    void display(){
+        System.out.println("Inside Banana's display method");
+
+    }
+}
+class Cherry extends Apple{
+    void display() { 
+        System.out.println("Inside cherry's display method");
+}
+}
+class Fruits_Dispatch{
+    public static void main(String args[]){
+        Apple a=new Apple();
+        Banana b=new Banana();
+        Cherry c=new Cherry();
+        Apple ref;
+        ref=a;
+        ref.display();
+        ref=b;
+        ref.display();
+    }
+}
